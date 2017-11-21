@@ -12,7 +12,8 @@ $(window).on('load', function() {
 });
 function reName(){
 	if(window.location.hostname.match(/alyssa/)){
-		$('.hsContent').replace(/Ryan/, "Alyssa");
+		var hsContent = $('.hsContent');
+		hsContent.html(hsContent.html().replace(/Ryan/, "Alyssa"));
 		document.title = document.title.replace(/Ryan/, "Alyssa");
 	}
 }
