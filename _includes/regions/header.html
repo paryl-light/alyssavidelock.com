@@ -3,4 +3,32 @@
 		{% include components/mobile-toggle.html %}
 		{% include components/navigation--home.html %}
 	</div>
+	
+	<div class="contact-form header-form">
+		<div class="tab-open"><span>Contact Me!</span></div>
+		<form class="gform contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbz9labZ5GHDpMZmWKo8K1hSbtoKc59UuYR40gij9PFuiTCP4js/exec" data-email="alyssa.videlock@gmail.com">
+			<div style="display: none;" class="thankyou_message">
+				<h2>
+					<em>Thank you!</em> I will contact you as soon as possible!
+				</h2>
+			</div>
+			<fieldset class="form-group">
+				<label for="username">Name</label>
+				<input class="form-control" id="username" name="username" placeholder="First and Last Name" />
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="email">Email</label>
+				<input class="form-control" id="email" required name="email" placeholder="example@example.com" />
+			</fieldset>
+			<fieldset class="form-group color">
+				<label for="color">Color</label>
+				<input class="form-control" id="color" name="color" placeholder="Favorite Color" />
+			</fieldset>
+			<fieldset class="form-group full-width">
+				<label for="message">Message</label>
+				<textarea id="message" class="form-control" name="message"></textarea>
+			</fieldset>
+			<button type="submit" class="btn btn-primary button-success">Submit</button>
+		</form>
+	</div>
 </header>

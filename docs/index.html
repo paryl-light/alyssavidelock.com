@@ -16,7 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
 	<script>
 	!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function l(){d.addEventListener&&d.removeEventListener("load",l),d.media=r||"all"}var a,i=e.document,d=i.createElement("link");if(n)a=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;a=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){a.parentNode.insertBefore(d,n?a:a.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",l),d.onloadcssdefined=f,f(l),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(t){}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){e.clearInterval(n)})}}}(this);
-	loadCSS('/assets/styles/main.css?1511251524488878000');
+	loadCSS('/assets/styles/main.css?1512040473244050000');
 	loadCSS('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 	</script>
 
@@ -66,9 +66,42 @@
 			
 			
 			
-				<li class="nav-color-white active">
+				<li class="nav-color-white">
+					<a href="#project-showcase">
+						<span class="nav-item-fg">Projects</span>
+						<span class="nav-item-bg"></span>
+					</a>
+				</li>
+			 
+		 
+			
+			
+			
+				<li class="nav-color-white">
+					<a href="#work-and-college-experience">
+						<span class="nav-item-fg">Work and College Experience</span>
+						<span class="nav-item-bg"></span>
+					</a>
+				</li>
+			 
+		 
+			
+			
+			
+				<li class="nav-color-white">
 					<a href="#my-skills">
 						<span class="nav-item-fg">Skills</span>
+						<span class="nav-item-bg"></span>
+					</a>
+				</li>
+			 
+		 
+			
+			
+			
+				<li class="nav-color-white">
+					<a href="#contact-me">
+						<span class="nav-item-fg">Contact Me</span>
 						<span class="nav-item-bg"></span>
 					</a>
 				</li>
@@ -77,7 +110,36 @@
 	</ul>
 </nav>
 	</div>
+	
+	<div class="contact-form header-form">
+		<div class="tab-open"><span>Contact Me!</span></div>
+		<form class="gform contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbz9labZ5GHDpMZmWKo8K1hSbtoKc59UuYR40gij9PFuiTCP4js/exec" data-email="alyssa.videlock@gmail.com">
+			<div style="display: none;" class="thankyou_message">
+				<h2>
+					<em>Thank you!</em> I will contact you as soon as possible!
+				</h2>
+			</div>
+			<fieldset class="form-group">
+				<label for="username">Name</label>
+				<input class="form-control" id="username" name="username" placeholder="First and Last Name" />
+			</fieldset>
+			<fieldset class="form-group">
+				<label for="email">Email</label>
+				<input class="form-control" id="email" required name="email" placeholder="example@example.com" />
+			</fieldset>
+			<fieldset class="form-group color">
+				<label for="color">Color</label>
+				<input class="form-control" id="color" name="color" placeholder="Favorite Color" />
+			</fieldset>
+			<fieldset class="form-group full-width">
+				<label for="message">Message</label>
+				<textarea id="message" class="form-control" name="message"></textarea>
+			</fieldset>
+			<button type="submit" class="btn btn-primary button-success">Submit</button>
+		</form>
+	</div>
 </header>
+
         <div class="hero parallax-container">
             <a id="me" class="sr-only"></a>
             <div class="parallax-layer layer-1"><img src="/assets/img/code4.png" alt="Coding background Web and SEO developer Ryan Videlock" title="Web Developer Ryan Videlock" /></div>
@@ -87,7 +149,7 @@
                 <div class="container">
                     <div class="hsContent">
                         <h1>Ryan Videlock</h1>
-                        <h2>Web Developer and SEO Specialist</h2>
+                        <h2>Full Stack Developer</h2>
                     </div>
                 </div>
                 <div class="down-arrow"></div>
@@ -95,8 +157,13 @@
             <div class="parallax-cover">
                 <div class="container main-content">   
                     
+<h3 id="about-me">About me</h3>
+
+<p><img src="" alt="" /></p>
+
+<h3 id="project-showcase">Project Showcase</h3>
+
 <div class="projects-container">
-    <h3>My projects</h3>
     <ul class="projects">
 
 
@@ -200,8 +267,11 @@
 </div>
 
 <h3 id="my-skills">My Skills</h3>
+
 <div class="skills">
     <ul class="general-skills">
+
+
 
 
     <li class="general-skill-1 skill">
@@ -224,6 +294,7 @@
         <span class="skill-description"><span>I work well with teams both large and small, I'm friendly and helpful</span></span>
     </li>
 
+
     <li class="general-skill-2 skill">
         <h4 class="skill-title">Motivation</h4>
         <div class="skill-stars">
@@ -244,6 +315,7 @@
         <span class="skill-description"><span>I love web development work, it's a dream job</span></span>
     </li>
 
+
     <li class="general-skill-3 skill">
         <h4 class="skill-title">Learning</h4>
         <div class="skill-stars">
@@ -263,6 +335,7 @@
         </div>
         <span class="skill-description"><span>I'm always willing to learn new things, in fact it's the biggest proponent of why I love Development</span></span>
     </li>
+
 
     <li class="general-skill-4 skill">
         <h4 class="skill-title">Frameworks</h4>
@@ -288,7 +361,9 @@
     <ul class="webDevelopment-skills">
 
 
-    <li class="webDevelopment-skill-5 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+
+    <li class="webDevelopment-skill-1 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">HTML5</h4>
         <div class="skill-stars">
             
@@ -308,7 +383,8 @@
         <span class="skill-description"><span>I've been learning HTML since way back when I used notepad for coding.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-6 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-2 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">CSS3</h4>
         <div class="skill-stars">
             
@@ -328,7 +404,8 @@
         <span class="skill-description"><span>A fundamental block of design and something that every developer needs to know.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-7 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-3 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">SCSS &amp; LESS</h4>
         <div class="skill-stars">
             
@@ -348,7 +425,8 @@
         <span class="skill-description"><span>Programatic CSS is the greatest thing to have happened to CSS. I've been working with this for a long time now and have improved greatly.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-8 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-4 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">Javascript &amp; ES6</h4>
         <div class="skill-stars">
             
@@ -368,7 +446,8 @@
         <span class="skill-description"><span>One of the easiest scripting languages that just keeps getting better. I started with the basics and Jquery, and I've been learning ES6 recently.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-9 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-5 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">PHP</h4>
         <div class="skill-stars">
             
@@ -388,7 +467,8 @@
         <span class="skill-description"><span>The fastest server side language to get a project up and running. This is the most used skill I have.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-10 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-6 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">C#</h4>
         <div class="skill-stars">
             
@@ -408,7 +488,8 @@
         <span class="skill-description"><span>One of the first programming languages I learned and something that holds a place in the heart of how I program.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-11 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-7 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">SQL</h4>
         <div class="skill-stars">
             
@@ -428,7 +509,8 @@
         <span class="skill-description"><span>Database languages are both easy and incredibly powerful. Learning how to use them is one of the most important things every developer should do.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-12 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-8 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">Java</h4>
         <div class="skill-stars">
             
@@ -448,7 +530,8 @@
         <span class="skill-description"><span>A language that I've quickly picked up due to knowledge of other languages. It's uses are great but I haven't had much time to get familiar with it.</span></span>
     </li>
 
-    <li class="webDevelopment-skill-13 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+
+    <li class="webDevelopment-skill-9 skill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
         <h4 class="skill-title">React</h4>
         <div class="skill-stars">
             
@@ -472,7 +555,9 @@
 <ul class="operatingSystem-skills">
 
 
-    <li class="operatingSystem-skill-14 skill">
+
+
+    <li class="operatingSystem-skill-1 skill">
         <h4 class="skill-title">Windows XP-10</h4>
         <div class="skill-stars">
             
@@ -492,7 +577,8 @@
         <span class="skill-description"><span>Been using this since I'm a kid. I have a complete understanding of how to use this OS and how to troubleshoot it.</span></span>
     </li>
 
-    <li class="operatingSystem-skill-15 skill">
+
+    <li class="operatingSystem-skill-2 skill">
         <h4 class="skill-title">Mac OSX+</h4>
         <div class="skill-stars">
             
@@ -512,7 +598,8 @@
         <span class="skill-description"><span>Picked this up in my design days in college since everyone used it. Incredibly easy thanks to how user friendly the environment is.</span></span>
     </li>
 
-    <li class="operatingSystem-skill-16 skill">
+
+    <li class="operatingSystem-skill-3 skill">
         <h4 class="skill-title">Ubuntu</h4>
         <div class="skill-stars">
             
@@ -536,7 +623,9 @@
 <ul class="developmentSoftware-skills">
 
 
-    <li class="developmentSoftware-skill-17 skill">
+
+
+    <li class="developmentSoftware-skill-1 skill">
         <h4 class="skill-title">Visual Studio 2008</h4>
         <div class="skill-stars">
             
@@ -556,7 +645,8 @@
         <span class="skill-description"><span>Used this in college a lot and haven't picked it up in awhile. I still have knowledge on how to use it however.</span></span>
     </li>
 
-    <li class="developmentSoftware-skill-18 skill">
+
+    <li class="developmentSoftware-skill-2 skill">
         <h4 class="skill-title">Unity</h4>
         <div class="skill-stars">
             
@@ -576,7 +666,8 @@
         <span class="skill-description"><span>I've used this for many tiny projects that haven't seen the light of day in a long time.</span></span>
     </li>
 
-    <li class="developmentSoftware-skill-19 skill">
+
+    <li class="developmentSoftware-skill-3 skill">
         <h4 class="skill-title">Flash</h4>
         <div class="skill-stars">
             
@@ -596,7 +687,8 @@
         <span class="skill-description"><span>The first thing I learned in college. It's not used much anymore, for good reason, but it has it's place for animators and small indie games.</span></span>
     </li>
 
-    <li class="developmentSoftware-skill-20 skill">
+
+    <li class="developmentSoftware-skill-4 skill">
         <h4 class="skill-title">Photoshop &amp; Illustrator</h4>
         <div class="skill-stars">
             
@@ -616,7 +708,8 @@
         <span class="skill-description"><span>Photoshop and Illustrator are probably the best tools for editing and refining images, text and way way more. I've used it since I first started in development.</span></span>
     </li>
 
-    <li class="developmentSoftware-skill-21 skill">
+
+    <li class="developmentSoftware-skill-5 skill">
         <h4 class="skill-title">Maya</h4>
         <div class="skill-stars">
             
@@ -636,7 +729,8 @@
         <span class="skill-description"><span>A 3D program I've used for modeling assets for classes and personal projects</span></span>
     </li>
 
-    <li class="developmentSoftware-skill-22 skill">
+
+    <li class="developmentSoftware-skill-6 skill">
         <h4 class="skill-title">Intellij IDEA</h4>
         <div class="skill-stars">
             
@@ -659,17 +753,110 @@
 </ul>
 </div>
 
+<h3 id="work-and-college-experience">Work and College Experience</h3>
+
+<div class="work-experience-container">
+    <ul class="experiences">
+
+
+        <li class="experience-1 experience card">
+            <a href="http://www.cybermark.com/" target="_blank">
+                <h4 class="experience-title card-front">
+                    <span>Cybermark International</span>
+                </h4>
+                <div class="experience-description card-back">
+                    <span>I worked here for about 3 months. During those months I learned a lot of the basic skills I would then apply to future projects. I never produced my own projects here, but I learned a lot about Regex, CSS, PHP, SQL, SEO and a lot more!</span>
+                </div>
+            </a>
+        </li>
+
+        <li class="experience-2 experience card">
+            <a href="https://www.bx3.com/" target="_blank">
+                <h4 class="experience-title card-front">
+                    <span>BX3 Interactive</span>
+                </h4>
+                <div class="experience-description card-back">
+                    <span>For over a year I worked tirelessly creating and editing websites using custom CMS's built on PHP and SQL databases. It was a small company and we all wore many different hats throughout the development project. It wasn't unexpected for me to help with designing, talking to customers, build a database structure or create entirely new projects on my own. I parted ways on good terms with them to get back on the eastern coast of the United States.</span>
+                </div>
+            </a>
+        </li>
+
+        <li class="experience-3 experience card">
+            <a href="https://d3corp.com/" target="_blank">
+                <h4 class="experience-title card-front">
+                    <span>D3Corp</span>
+                </h4>
+                <div class="experience-description card-back">
+                    <span>Working here was one of the best experiences in my work career so far. I learned a lot about git and so many other development processes. I wore a lot of hats here as well, ranging from SEO specialist to main developer. Work was always fast and forethcoming and I was always kept busy. The team was comfortable and friendly and we all got along rather well.</span>
+                </div>
+            </a>
+        </li>
+
+        <li class="experience-4 experience card">
+            <a href="http://www.sunysuffolk.edu/" target="_blank">
+                <h4 class="experience-title card-front">
+                    <span>Suffolk County Community College</span>
+                </h4>
+                <div class="experience-description card-back">
+                    <span>My first college experience, where I learned design skills that has given me a keen eye on color composition, spacing and more. I also got into programming here first, with computer math and basic flash programming.</span>
+                </div>
+            </a>
+        </li>
+
+        <li class="experience-5 experience card">
+            <a href="http://www.rit.edu/" target="_blank">
+                <h4 class="experience-title card-front">
+                    <span>Rochester Institute of Technology</span>
+                </h4>
+                <div class="experience-description card-back">
+                    <span>I loved this university. The diversity in students coupled with the care and attention from the professors truly shined through. I learned so much about programming and development here and it kicked off my career into web development.</span>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+<h3 id="contact-me">Contact me!</h3>
+
+<div class="contact-form">
+    <form class="gform contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbz9labZ5GHDpMZmWKo8K1hSbtoKc59UuYR40gij9PFuiTCP4js/exec" data-email="alyssa.videlock@gmail.com">
+        <div style="display: none;" class="thankyou_message">
+            <h2>
+                <em>Thank you!</em> I will contact you as soon as possible!
+            </h2>
+        </div>
+        <fieldset class="form-group">
+            <label for="username_b">Name</label>
+            <input class="form-control" id="username_b" name="username" placeholder="First and Last Name" />
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="email_b">Email</label>
+            <input class="form-control" id="email_b" required="" name="email" placeholder="example@example.com" />
+        </fieldset>
+        <fieldset class="form-group color">
+            <label for="color_b">Color</label>
+            <input class="form-control" id="color_b" name="color" placeholder="Favorite Color" />
+        </fieldset>
+        <fieldset class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" name="message"></textarea>
+        </fieldset>
+        <button type="submit" class="btn btn-primary button-success">Submit</button>
+    </form>
+</div>
+
                 </div>
             </div>
         </div>
         <footer class="region--footer" role="contentinfo">
 	
 </footer>
-		<script type="text/javascript" src="/assets/js/main.js?1511251524488878000" async></script>
+		<script type="text/javascript" src="/assets/js/main.js?1512040473244050000" async></script>
 
 <noscript>
-	<link href='/assets/styles/main.css?1511251524488878000' rel='stylesheet' type='text/css'>
+	<link href='/assets/styles/main.css?1512040473244050000' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,400,800" rel="stylesheet">
-</noscri
+</noscript>
     </body>
 </html>

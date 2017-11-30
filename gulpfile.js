@@ -130,6 +130,7 @@ gulp.task('build:scripts:global', function() {
         paths.jsFiles + '/global/extras' + paths.jsPattern,
         paths.jsFiles + '/global/jquery.alton.min.js',
         paths.jsFiles + '/global/jquery.parallax-scroll.min.js',
+        paths.jsFiles + '/global/form-submission-handler.js',
         paths.jsFiles + '/global/main.js'
     ])
         .pipe(concat('main.js'))

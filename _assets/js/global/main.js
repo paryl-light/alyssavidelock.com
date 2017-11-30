@@ -1,14 +1,17 @@
 // MOBILE MENU TRIGGER
+reName();
 $(window).on('load', function() {
 	$(window).on('resize', function( ){
 		projectHeight( );
 	});
-	reName();
 	projectHeight( );
 	$('.menu-bar').on('click', function( ){
 		$('.navigation-container').toggleClass('show-nav');
 	});
 	showObjects();
+	$('.tab-open').on('click', function( ){
+		$('.contact-form.header-form').toggleClass('show-form');
+	});
 });
 function reName(){
 	if(window.location.hostname.match(/alyssa/)){
@@ -29,7 +32,9 @@ function projectHeight( ){
 			project.addClass('active-project');
 		});
 		project.off('mouseleave').on('mouseleave', function( ){
-			projectDesc.height(0);
+			if($(window).width() > 768){
+				projectDesc.height(0);
+			}
 			project.removeClass('active-project');
 		});
 	})
