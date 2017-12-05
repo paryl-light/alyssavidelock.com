@@ -13,6 +13,18 @@
   },
   {
     "id": "2",
+    "name": "About Me",
+    "slug": "#about-me",
+    "url": "#about-me",
+    "layout": "home.html",
+    "meta_title": "Web Developer Ryan Videlock",
+    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white"
+  },
+  {
+    "id": "3",
     "name": "Projects",
     "slug": "#project-showcase",
     "url": "#project-showcase",
@@ -24,7 +36,7 @@
     "color": "white"
   },
   {
-    "id": "3",
+    "id": "4",
     "name": "Work and College Experience",
     "slug": "#work-and-college-experience",
     "url": "#work-and-college-experience",
@@ -36,7 +48,7 @@
     "color": "white"
   },
   {
-    "id": "4",
+    "id": "5",
     "name": "Skills",
     "slug": "#my-skills",
     "url": "#my-skills",
@@ -48,7 +60,7 @@
     "color": "white"
   },
   {
-    "id": "5",
+    "id": "6",
     "name": "Contact Me",
     "slug": "#contact-me",
     "url": "#contact-me",

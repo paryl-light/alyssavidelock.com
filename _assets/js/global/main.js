@@ -12,12 +12,29 @@ $(window).on('load', function() {
 	$('.tab-open').on('click', function( ){
 		$('.contact-form.header-form').toggleClass('show-form');
 	});
+	scrollMenu();
 });
+function scrollMenu() {
+	var navItems = $('.nav-item');
+	navItems.each(function( ){
+		var thisA = $(this).children('a');
+		var offsetTop = $(thisA.attr('href')).offset().top;
+		thisA.on('click', function( ){
+			$('.hero.parallax-container').animate({ scrollTop: offsetTop});
+			return false;
+		});
+	});
+}
 function reName(){
 	if(window.location.hostname.match(/alyssa/)){
 		var hsContent = $('.hsContent');
 		hsContent.html(hsContent.html().replace(/Ryan/, "Alyssa"));
 		document.title = document.title.replace(/Ryan/, "Alyssa");
+		var aboutMe = $('.about-me > .col-lg-6');
+		aboutMe.each(function( ){
+			var aboutThis = $(this);
+			aboutThis.html(aboutThis.html().replace(/Ryan/, "Alyssa"));
+		});
 	}
 }
 function projectHeight( ){

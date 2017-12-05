@@ -12,8 +12,16 @@ meta_description:
 
 ### About me
 
-<img src="" alt="">
-
+<div class="row about-me">
+    <div class="col-lg-6">
+        <img class="img-fluid" src="/assets/img/me.jpg" alt="Web Developer for hire" title="Full stack web developer and seo specialist">
+    </div>
+    <div class="col-lg-6">
+        This is me, webdeveloper and seo specialist, Ryan Videlock! I've worked a small litany of jobs throught my career, with many different people. I work well with both small and large teams, adjusting my attitude and schedule to best suit the needs of the group as a whole. Not only do I enjoy working on problems presented to me, but overcoming them is the best feeling ever.<br /><br />
+        I love the idea of learning new things and meeting new people. I make friends quickly and pick up on things even faster. I make sure to put all of my attention towards the task at hand and not stop until the project is completed to it's best.<br /><br />
+        I have worked on many different projects; some of which are shown below. I have also come from a diverse work background, family-owned businesses and small companies alike, where I had to learn to wear many different developer, SEO, design and even data management hats.
+    </div>
+</div>
 ### Project Showcase
 
 <div class="projects-container">
@@ -29,6 +37,26 @@ meta_description:
                         <img src="/assets/img/{{project.image}}" alt="{{project.alt}}" title="{{project.title}}" />
                     </span>
                 </span>
+            </a>
+        </li>
+{%endfor%}
+    </ul>
+</div>
+
+### Work and College Experience
+
+<div class="work-experience-container">
+    <ul class="experiences">
+{% assign experiences = site.data.workexperience  %}
+{% for experience in experiences %}
+        <li class="experience-{{experience.id}} experience card">
+            <a href="{{experience.url}}" target="_blank">
+                <h4 class="experience-title card-front">
+                    <span>{{experience.name}}</span>
+                </h4>
+                <div class="experience-description card-back">
+                    <span>{{experience.description}}</span>
+                </div>
             </a>
         </li>
 {%endfor%}
@@ -121,25 +149,6 @@ meta_description:
 </ul>
 </div>
 
-### Work and College Experience
-
-<div class="work-experience-container">
-    <ul class="experiences">
-{% assign experiences = site.data.workexperience  %}
-{% for experience in experiences %}
-        <li class="experience-{{experience.id}} experience card">
-            <a href="{{experience.url}}" target="_blank">
-                <h4 class="experience-title card-front">
-                    <span>{{experience.name}}</span>
-                </h4>
-                <div class="experience-description card-back">
-                    <span>{{experience.description}}</span>
-                </div>
-            </a>
-        </li>
-{%endfor%}
-    </ul>
-</div>
 
 ### Contact me!
 
