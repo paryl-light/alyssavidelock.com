@@ -18,6 +18,7 @@ function scrollMenu() {
 	var navItems = $('.nav-item');
 	navItems.each(function( ){
 		var thisA = $(this).children('a');
+		if(thisA.attr('target') == '_blank'){ return true; }
 		var offsetTop = $(thisA.attr('href')).offset().top;
 		thisA.on('click', function( ){
 			$('.hero.parallax-container').animate({ scrollTop: offsetTop});

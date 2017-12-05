@@ -9,7 +9,8 @@
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
     "id": "2",
@@ -21,7 +22,8 @@
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
     "id": "3",
@@ -33,7 +35,8 @@
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
     "id": "4",
@@ -45,7 +48,8 @@
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
     "id": "5",
@@ -57,7 +61,8 @@
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
     "id": "6",
@@ -69,6 +74,20 @@
     "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
+  },
+  {
+    "id": "6",
+    "name": "PDF Resume",
+    "slug": "/assets/files/resume.pdf",
+    "url": "/assets/files/resume.pdf",
+    "layout": "home.html",
+    "meta_title": "Web Developer Ryan Videlock",
+    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white",
+    "target": "_blank"
   }
 ]

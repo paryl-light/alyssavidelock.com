@@ -188,6 +188,26 @@ $opacity: .9;
 				background-color: $white;
 			}
 		}
+		&:nth-child(4n+1),&:nth-child(4n+1) {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $orange;
+			}
+		}
+		&:nth-child(4n+2),&:nth-child(4n+2) {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $blue;
+			}
+		}
+		&:nth-child(4n+3),&:nth-child(4n+3) {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $purple;
+			}
+		}
+		&:nth-child(4n+4),&:nth-child(4n+4) {
+			a > .nav-item-bg:after, a > .nav-item-bg:before {
+				background-color: $green;
+			}
+		}
 		a {
 			font-size: 18px;
 			font-weight: 900;
