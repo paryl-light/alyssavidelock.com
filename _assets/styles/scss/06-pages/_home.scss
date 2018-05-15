@@ -48,10 +48,13 @@ body, html {
         .project-description {
             background-color: rgba(255,255,255,.2);
             color: $white;
-            height: 0;
+            height: auto;
             overflow: hidden;
             padding: 0 15px;
             transition: height 1.25s ease;
+            @include media-breakpoint-up(md){
+                height: 0;
+            }
             > span {
                 display: block;
                 padding: 15px 0;
@@ -207,7 +210,7 @@ body, html {
     .main-content {
         background-color: darken($white, 25%);
         border-radius: 20px;
-        margin-top: 700px;
+        margin-top: 280px;
         margin-bottom: 50px;
         padding: 30px;
         h3 {
@@ -219,84 +222,276 @@ body, html {
 }
 
 $parallax__layers: 3;
-  
+
 @for $i from 0 through $parallax__layers {
 $x: ($parallax__layers - $i) / 2;
-.layer-#{$i}{
-    transform: translateZ(-99 * $x#{px}) scale($x + 1);
+    .layer-#{$i}{
+        transform: translateZ(unquote("-99 * $x#{px}")) scale($x + 1);
+    }
 }
+
+$general_skill_numbers: 4;
+$development_skill_numbers: 9;
+$os_skill_numbers: 3;
+$program_skill_numbers: 7;
+$i: 0;
+@for $i from $general_skill_numbers * -1 through -1 {
+    $x: ($general_skill_numbers - $i) / 2;
+    $neg: 1;
+    @if ($i % 2 == 0) {
+        $neg: -1;
+    }
+    .general-skill-#{abs($i)}{
+        @include media-breakpoint-up(lg){
+            transform: translateX((-99 * $x) * $neg#{px});
+            transition-delay: .7 * abs($i)#{s} !important;
+        }
+    }
 }
+$i: 0;
+@for $i from $development_skill_numbers * -1 through -1 {
+    $x: ($development_skill_numbers - $i) / 2;
+    $neg: 1;
+    @if ($i % 2 == 0) {
+        $neg: -1;
+    }
+    .webDevelopment-skill-#{abs($i)}{
+        @include media-breakpoint-up(lg){
+            transform: translateX((-99 * $x) * $neg#{px});
+            transition-delay: .5 * abs($i)#{s} !important;
+        }
+    }
+}
+$i: 0;
+@for $i from $os_skill_numbers * -1 through -1 {
+    $x: ($os_skill_numbers - $i) / 2;
+    $neg: 1;
+    @if ($i % 2 == 0) {
+        $neg: -1;
+    }
+    .operatingSystem-skill-#{abs($i)}{
+        @include media-breakpoint-up(lg){
+            transform: translateX((-99 * $x) * $neg#{px});
+            transition-delay: .6 * abs($i)#{s} !important;
+        }
+    }
+}
+$i: 0;
+@for $i from $program_skill_numbers * -1 through -1 {
+    $x: ($program_skill_numbers - $i) / 2;
+    $neg: 1;
+    @if ($i % 2 == 0) {
+        $neg: -1;
+    }
+    .developmentSoftware-skill-#{abs($i)}{
+        @include media-breakpoint-up(lg){
+            transform: translateX((-99 * $x) * $neg#{px});
+            transition-delay: .4 * abs($i)#{s} !important;
+        }
+    }
+}
+
 .skills {
+    align-items: flex-start;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-bottom: 150px;
+    overflow: hidden;
+    &.skill-appear {
+        .skill {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
     ul {
-    list-style: none;
-    margin: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        @include media-breakpoint-up(md){
+            padding: 0 2.5%;
+            width: 50%;
+        }
+        @include media-breakpoint-up(lg){
+            padding: 0 1.25%;
+            width: 25%;
+        }
+        &.general-skills { 
+            .skill-title {
+                background-color: $orange;
+            }
+            .skill-stars {
+                color: $orange;
+            }
+        }
+        &.webDevelopment-skills {
+            .skill-title {
+                background-color: $purple;
+            }
+            .skill-stars {
+                color: $purple;
+            }
+        } 
+        &.operatingSystem-skills {
+            .skill-title {
+                background-color: $green;
+            }
+            .skill-stars {
+                color: $green;
+            }
+        }
+        &.developmentSoftware-skills {
+            .skill-title {
+                background-color: $blue;
+            }
+            .skill-stars {
+                color: $blue;
+            }
+        } 
+        .skill {
+            margin-bottom: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            border-color: $lightGray;
+            box-shadow: 0 0 5px 1px rgba(0,0,0,.5);
+            opacity: 0;
+            overflow: hidden;
+            text-align: center;
+            transition: opacity .75s ease, transform .5s ease;
+            .skill-title {
+                color: $white;
+                font-size: 24px;
+                padding: 15px;
+            }
+            .skill-stars {
+                font-size: 24px;
+                padding: 7px 15px;
+            }
+            .skill-description {
+                display: block;
+                padding: 7px 15px 15px;
+            }
+        }
+    }
+}
+.experiences {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     padding: 0;
-    width: 100%;
-    @include media-breakpoint-up(md){
-        padding: 0 2.5%;
-        width: 50%;
-    }
-    @include media-breakpoint-up(lg){
-        padding: 0 1.25%;
-        width: 25%;
-    }
-    &.general-skills { 
-        .skill-title {
-            background-color: $orange;
+    margin: 0 0 150px;
+    .experience {
+        margin-bottom: 30px;
+        padding: 30px;
+        position: relative;
+        width: 100%;
+        .card-front, .card-back {
+            backface-visibility: hidden;
+            background-color: $white;
+            border: 1px solid $gray;
+            transition: transform .5s linear, z-index .5s linear;
+            transform-style: preserve-3d;
+            > span {
+                left:0;
+                margin: auto;
+                padding: 0 15px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
-        .skill-stars {
-            color: $orange;
-        }
-    }
-    &.webDevelopment-skills {
-        .skill-title {
-            background-color: $purple;
-        }
-        .skill-stars {
-            color: $purple;
-        }
-    } 
-    &.operatingSystem-skills {
-        .skill-title {
-            background-color: $green;
-        }
-        .skill-stars {
-            color: $green;
-        }
-    }
-    &.developmentSoftware-skills {
-        .skill-title {
-            background-color: $blue;
-        }
-        .skill-stars {
-            color: $blue;
-        }
-    } 
-    .skill {
-        margin-bottom: 15px;
-        background-color: #fff;
-        border-radius: 10px;
-        border-color: $lightGray;
-        box-shadow: 0 0 5px 1px rgba(0,0,0,.5);
-        overflow: hidden;
-        text-align: center;
-        .skill-title {
-            color: $white;
-            font-size: 24px;
-            padding: 15px;
-        }
-        .skill-stars {
-            font-size: 24px;
-            padding: 7px 15px;
-        }
-        .skill-description {
+        .card-front {
             display: block;
-            padding: 7px 15px 15px;
+            height: 500px;
+            margin: 0;
+            padding: 15px;
+            position: relative;
+            text-align: center;
+            transform: rotateY(0);
+            transform-origin: center;
+            z-index: 5;
+        }
+        .card-back {
+            display: block;
+            height: 500px;
+            margin: 0 30px;
+            position: absolute;
+            right: 0;
+            top: 30px;
+            transform: rotateY(180deg);
+            transform-origin: center;
+            width: calc(100% - 75px);
+            z-index: 1;
+        }
+        &:hover, &:active {
+            .card-front, .card-back {
+                transition: transform .5s linear, z-index .75s linear;
+            }
+            .card-front {
+                transform: rotateY(180deg);
+                z-index: 1;
+            }
+            .card-back {
+                transform: rotateY(0);
+                z-index: 5;
+            }
+        }
+        @include media-breakpoint-up( md ) {
+            margin: 0 2.5% 30px;
+            width: 45%;
+        }
+        @include media-breakpoint-up( xl ) {
+            margin: 0 1.5% 30px;
+            width: 30%;
         }
     }
+}
+.contact-form {
+    .tab-open {
+        font-size: 16px;
+    }
+    font-size: 0;
+    .contactForm {
+        background-color: #fff;
+        padding: 30px;
+    }
+    .form-group {
+        @include media-breakpoint-up(md){
+            display: inline-block;
+            padding: 0;
+            width: 50%;
+            &:nth-child(2n) {
+                padding-right: 2.5%;
+            }
+            &:nth-child(2n + 1) {
+                padding-left: 2.5%;
+            }
+            &.full-width {
+                padding: 0;
+                width: 100%;
+            }
+        }
+        &.full-width {
+            font-size: 16px;
+        }
+        &.color {
+            display: none;
+        }
+        .form-control {
+        }
+    }
+}
+.about-me {
+    padding-bottom: 75px;
+    img {
+        padding-bottom: 30px;
+    }
+    @include media-breakpoint-up(lg) {
+        img {
+            padding-bottom: 0;
+        }
     }
 }

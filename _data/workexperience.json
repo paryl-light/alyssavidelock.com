@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Cybermark International",
+        "description": "I worked here for about 3 months. During those months I learned a lot of the basic skills I would then apply to future projects. I never produced my own projects here, but I learned a lot about Regex, CSS, PHP, SQL, SEO and a lot more!",
+        "url": "http://www.cybermark.com/"
+    },
+    {
+        "id": 2,
+        "name": "BX3 Interactive",
+        "description": "For over a year I worked tirelessly creating and editing websites using custom CMS's built on PHP and SQL databases. It was a small company and we all wore many different hats throughout the development project. It wasn't unexpected for me to help with designing, talking to customers, build a database structure or create entirely new projects on my own. I parted ways on good terms with them to get back on the eastern coast of the United States.",
+        "url": "https://www.bx3.com/"
+    },
+    {
+        "id": 3,
+        "name": "D3Corp",
+        "description": "Working here was one of the best experiences in my work career so far. I learned a lot about git and so many other development processes. I wore a lot of hats here as well, ranging from SEO specialist to main developer. Work was always fast and forethcoming and I was always kept busy. The team was comfortable and friendly and we all got along rather well.",
+        "url": "https://d3corp.com/"
+    },
+    {
+        "id": 4,
+        "name": "Suffolk County Community College",
+        "description": "My first college experience, where I learned design skills that has given me a keen eye on color composition, spacing and more. I also got into programming here first, with computer math and basic flash programming.",
+        "url": "http://www.sunysuffolk.edu/"
+    },
+    {
+        "id": 5,
+        "name": "Rochester Institute of Technology",
+        "description": "I loved this university. The diversity in students coupled with the care and attention from the professors truly shined through. I learned so much about programming and development here and it kicked off my career into web development.",
+        "url": "http://www.rit.edu/"
+    }
+]

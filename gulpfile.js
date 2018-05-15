@@ -130,6 +130,7 @@ gulp.task('build:scripts:global', function() {
         paths.jsFiles + '/global/extras' + paths.jsPattern,
         paths.jsFiles + '/global/jquery.alton.min.js',
         paths.jsFiles + '/global/jquery.parallax-scroll.min.js',
+        paths.jsFiles + '/global/form-submission-handler.js',
         paths.jsFiles + '/global/main.js'
     ])
         .pipe(concat('main.js'))
@@ -283,6 +284,7 @@ gulp.task('clean:jekyll', function(callback) {
 gulp.task('clean', ['clean:jekyll',
     'clean:fonts',
     'clean:images',
+    'clean:files',
     'clean:scripts',
     'clean:styles']);
 
@@ -317,7 +319,7 @@ gulp.task('build:test', function(callback) {
  */
 gulp.task('build:local', function(callback) {
     runSequence('clean',
-        ['build:scripts', 'build:images', 'build:styles', 'build:fonts'],
+        ['build:scripts', 'build:images', 'build:files', 'build:styles', 'build:fonts'],
         'build:jekyll:local',
       callback);
 });
@@ -379,9 +381,12 @@ gulp.task('serve', ['build:local'], function() {
 
     // Watch .js files.
     gulp.watch('_assets/js/**/*.js', ['build:scripts:watch']);
-
+    
     // Watch image files; changes are piped to browserSync.
     gulp.watch('_assets/img/**/*', ['build:images']);
+    
+    // Watch files; changes are piped to browserSync.
+    gulp.watch('_assets/files/**/*', ['build:files']);
 
     // Watch posts.
     gulp.watch('_posts/**/*.+(md|markdown|MD)', ['build:jekyll:watch']);
@@ -434,4 +439,27 @@ gulp.task('update:gems', function() {
  */
 gulp.task('cache-clear', function(done) {
     return cache.clearAll(done);
+});
+
+
+/**
+ * Task: build:files
+ *
+ * Move files from file folder to assets file folder
+ */
+gulp.task('build:files', function(){
+    return gulp.src(paths.fileFilesGlob)
+        .pipe(gulp.dest(paths.jekyllFileFiles))
+        .pipe(gulp.dest(paths.siteFileFiles))
+        .pipe(browserSync.stream());
+});
+
+/**
+ * Task: clean:files
+ *
+ * Deletes all processed files.
+ */
+gulp.task('clean:files', function(callback) {
+    del([paths.jekyllFileFiles, paths.siteFileFiles]);
+    callback();
 });

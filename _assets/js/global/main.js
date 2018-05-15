@@ -1,19 +1,41 @@
 // MOBILE MENU TRIGGER
+reName();
 $(window).on('load', function() {
 	$(window).on('resize', function( ){
 		projectHeight( );
 	});
-	reName();
 	projectHeight( );
 	$('.menu-bar').on('click', function( ){
 		$('.navigation-container').toggleClass('show-nav');
 	});
 	showObjects();
+	$('.tab-open').on('click', function( ){
+		$('.contact-form.header-form').toggleClass('show-form');
+	});
+	scrollMenu();
 });
+function scrollMenu() {
+	var navItems = $('.nav-item');
+	navItems.each(function( ){
+		var thisA = $(this).children('a');
+		if(thisA.attr('target') == '_blank'){ return true; }
+		var offsetTop = $(thisA.attr('href')).offset().top;
+		thisA.on('click', function( ){
+			$('.hero.parallax-container').animate({ scrollTop: offsetTop});
+			return false;
+		});
+	});
+}
 function reName(){
 	if(window.location.hostname.match(/alyssa/)){
-		$('.hsContent').replace(/Ryan/, "Alyssa");
+		var hsContent = $('.hsContent');
+		hsContent.html(hsContent.html().replace(/Ryan/, "Alyssa"));
 		document.title = document.title.replace(/Ryan/, "Alyssa");
+		var aboutMe = $('.about-me > .col-lg-6');
+		aboutMe.each(function( ){
+			var aboutThis = $(this);
+			aboutThis.html(aboutThis.html().replace(/Ryan/, "Alyssa"));
+		});
 	}
 }
 function projectHeight( ){
@@ -28,7 +50,9 @@ function projectHeight( ){
 			project.addClass('active-project');
 		});
 		project.off('mouseleave').on('mouseleave', function( ){
-			projectDesc.height(0);
+			if($(window).width() > 768){
+				projectDesc.height(0);
+			}
 			project.removeClass('active-project');
 		});
 	})
