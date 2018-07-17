@@ -2,21 +2,21 @@
     {
         "id": 1,
         "name": "Teamwork",
-        "description": "I work well with teams both large and small, I'm friendly and helpful",
+        "description": "I work well with teams both large and small, I'm friendly and helpful.",
         "level": "5",
         "category": "general"
     },
     {
         "id": 2,
         "name": "Motivation",
-        "description": "I love web development work, it's a dream job",
+        "description": "I love web development work, it's a dream job.",
         "level": "5",
         "category": "general"
     },
     {
         "id": 3,
         "name": "Learning",
-        "description": "I'm always willing to learn new things, in fact it's the biggest proponent of why I love Development",
+        "description": "I'm always willing to learn new things, in fact it's the biggest proponent of why I love Development.",
         "level": "5",
         "category": "general"
     },
@@ -51,7 +51,7 @@
     {
         "id": 8,
         "name": "Javascript & ES6",
-        "description": "One of the easiest scripting languages that just keeps getting better. I started with the basics and Jquery, and I've been learning ES6 recently.",
+        "description": "One of the best scripting languages that just keeps getting better. I started with the basics and Jquery, and I've been learning ES6 recently.",
         "level": "3",
         "category": "webDevelopment"
     },
@@ -86,7 +86,7 @@
     {
         "id": 13,
         "name": "React",
-        "description": "One of the 'newest' technologies out there as of this time (Dating myself, yes I know). I'm quickly picking it up as it's incredibly easy to learn",
+        "description": "I'm quickly picking it up as it's incredibly easy to learn.",
         "level": "2",
         "category": "webDevelopment"
     },
@@ -142,7 +142,7 @@
     {
         "id": 21,
         "name": "Maya",
-        "description": "A 3D program I've used for modeling assets for classes and personal projects",
+        "description": "A 3D program I've used for modeling assets for classes and personal projects.",
         "level": "2",
         "category": "developmentSoftware"
     },
