@@ -26,15 +26,15 @@
 				{% else %}
 					{% assign navColor = 'default' %}
 				{% endif %} 
-				<li class="nav-color-{{navColor}}{{active_class}}">
-					<a href="{{site.url}}{{item.url}}">
+				<li class="nav-item{{active_class}}">
+					<a href="{{site.url}}{{item.url}}" target="{{ item.target }}">
 						<span class="nav-item-fg">{{ item.name }}</span>
 						<span class="nav-item-bg"></span>
 					</a>
 				</li>
 			{% else %}
-				<li class="nav-color-{{item.color}}{{active_class}}">
-					<a href="{{site.url}}{{ item.url }}">
+				<li class="nav-item{{active_class}}">
+					<a href="{{site.url}}{{ item.url }}" target="{{ item.target }}">
 						<span class="nav-item-fg">{{ item.name }}</span>
 						<span class="nav-item-bg"></span>
 					</a>

@@ -5,58 +5,89 @@
     "slug": "#me",
     "url": "#me",
     "layout": "home.html",
-    "meta_title": "Web Developer Ryan Videlock",
-    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "meta_title": "Web Developer Alyssa Videlock",
+    "meta_description": "A web developer and SEO specialist, Alyssa Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
     "id": "2",
+    "name": "About Me",
+    "slug": "#about-me",
+    "url": "#about-me",
+    "layout": "home.html",
+    "meta_title": "Web Developer Alyssa Videlock",
+    "meta_description": "A web developer and SEO specialist, Alyssa Videlock can help out on any project, large or small.",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white",
+    "target": "_self"
+  },
+  {
+    "id": "3",
     "name": "Projects",
     "slug": "#project-showcase",
     "url": "#project-showcase",
     "layout": "home.html",
-    "meta_title": "Web Developer Ryan Videlock",
-    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "meta_title": "Web Developer Alyssa Videlock",
+    "meta_description": "A web developer and SEO specialist, Alyssa Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
-    "id": "3",
+    "id": "4",
     "name": "Work and College Experience",
     "slug": "#work-and-college-experience",
     "url": "#work-and-college-experience",
     "layout": "home.html",
-    "meta_title": "Web Developer Ryan Videlock",
-    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "meta_title": "Web Developer Alyssa Videlock",
+    "meta_description": "A web developer and SEO specialist, Alyssa Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
-    "id": "4",
+    "id": "5",
     "name": "Skills",
     "slug": "#my-skills",
     "url": "#my-skills",
     "layout": "home.html",
-    "meta_title": "Web Developer Ryan Videlock",
-    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "meta_title": "Web Developer Alyssa Videlock",
+    "meta_description": "A web developer and SEO specialist, Alyssa Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
   },
   {
-    "id": "5",
+    "id": "6",
     "name": "Contact Me",
     "slug": "#contact-me",
     "url": "#contact-me",
     "layout": "home.html",
-    "meta_title": "Web Developer Ryan Videlock",
-    "meta_description": "A web developer and SEO specialist, Ryan Videlock can help out on any project, large or small.",
+    "meta_title": "Web Developer Alyssa Videlock",
+    "meta_description": "A web developer and SEO specialist, Alyssa Videlock can help out on any project, large or small.",
     "short_description": "",
     "parent_id": "0",
-    "color": "white"
+    "color": "white",
+    "target": "_self"
+  },
+  {
+    "id": "6",
+    "name": "PDF Resume",
+    "slug": "/assets/files/resume.pdf",
+    "url": "/assets/files/resume.pdf",
+    "layout": "home.html",
+    "meta_title": "Web Developer Alyssa Videlock",
+    "meta_description": "A web developer and SEO specialist, Alyssa Videlock can help out on any project, large or small.",
+    "short_description": "",
+    "parent_id": "0",
+    "color": "white",
+    "target": "_blank"
   }
 ]

@@ -5,15 +5,7 @@
         "description": "Main developer behind this wordpress powered website. Everything was designed from the ground up with a custom plugin that interfaces with the barefoot web api to obtain available properties and sell them.",
         "link": "https://centraloc.com/",
         "image": "central-reservations.jpg",
-        "alt": "Central Reservation's main page by web developer Ryan Videlock"
-    },
-    {
-        "id": 2,
-        "name": "Nocturnal Design",
-        "description": "A dark themed custom designed website in a completely custom CMS made specifically for this client. Unique in that it was one of the first websites I put out and the customer enjoyed the custom designs I put in.",
-        "link": "http://www.nocturnaldesign.com/",
-        "image": "nocturnal-designs.jpg",
-        "alt": "The home page for Nocturna Design by web developer Ryan Videlock"
+        "alt": "Central Reservation's main page by web developer Alyssa Videlock"
     },
     {
         "id": 3,
@@ -21,15 +13,15 @@
         "description": "Custom video and a custom CMS built entirely for their product catalogue.",
         "link": "http://www.dynatex.com/",
         "image": "dynatex.jpg",
-        "alt": "Dynatex International's home page by web developer Ryan Videlock"
+        "alt": "Dynatex International's home page by web developer Alyssa Videlock"
     },
     {
         "id": 4,
         "name": "Embajador Tequila",
-        "description": "A fun project that let me explore new design opportunities. Custom menu, custom CMS, ",
+        "description": "A fun project that let me explore new design opportunities. Custom menu, custom CMS, with a design implemented by me. This provided unique challenges in the way I explored design, since I worked directly with the designer for a lot of what went into the website.",
         "link": "http://www.embajadortequila.com/",
         "image": "embajador-tequila.jpg",
-        "alt": "The main site for Embajador Tequila by web developer Ryan Videlock"
+        "alt": "The main site for Embajador Tequila by web developer Alyssa Videlock"
     },
     {
         "id": 5,
@@ -37,7 +29,7 @@
         "description": "Half Wordpress and half Magento build, with a wordpress theme built from the ground up to use a completely different architecture from a typical Wordpress build.",
         "link": "https://thefitnessconnection.com/",
         "image": "the-fitness-connection.jpg",
-        "alt": "The Fitness Connection's front page by web developer Ryan Videlock"
+        "alt": "The Fitness Connection's front page by web developer Alyssa Videlock"
     },
     {
         "id": 6,
@@ -45,7 +37,7 @@
         "description": "A single page parallax wordpress website. Heavily customised wordpress install using a prebuilt wordpress theme.",
         "link": "https://montecarlooceanfront.com/",
         "image": "monte-carlo-oceanfront.jpg",
-        "alt": "Front page design for Monte Carlo Oceanfront by web developer Ryan Videlock"
+        "alt": "Front page design for Monte Carlo Oceanfront by web developer Alyssa Videlock"
     },
     {
         "id": 7,
@@ -53,7 +45,7 @@
         "description": "Completely custom CMS, with a completely custom search tool that used a series of regex and mysql commands to find the correct reels for the end user. My last, biggest and most fun project to work on at BX3. It used a bunch of new css and js techniques for the time and was very well designed.",
         "link": "http://www.coxreels.com/",
         "image": "coxreels.jpg",
-        "alt": "CoxReels front page by web developer Ryan Videlock"
+        "alt": "CoxReels front page by web developer Alyssa Videlock"
     },
     {
         "id": 8,
@@ -61,6 +53,6 @@
         "description": "A realty site built on top of a custom CMS that uses a completely custom search engine to search through the properties.",
         "link": "https://www.lakeconroefineliving.com/",
         "image": "lake-conroe-realty.jpg",
-        "alt": "The home page of Sellers & Associates by web developer Ryan Videlock"
+        "alt": "The home page of Sellers & Associates by web developer Alyssa Videlock"
     }
 ]

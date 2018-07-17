@@ -69,8 +69,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   console.log($(gform).children('.form-group'));
   xhr.onreadystatechange = function() {
     $(gform).children('.form-group').css('display', 'none'); // hide form
-    $(gform).children('.form-group').css('display', 'none'); // hide form
-    $(gform).children('.btn').css('display', 'block');
+    $(gform).children('.btn').css('display', 'none');
+    $(gform).children('.thankyou_message').css('display', 'block');
     return;
   };
   // url encode form data for sending as post data
