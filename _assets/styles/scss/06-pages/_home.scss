@@ -193,13 +193,10 @@ body, html {
         width: 100%;
         min-width: 2500px;
     }
-    &.layer-1 {
-        transform: translateZ(-148.5px) scale(2.5) rotate(180deg);
-    }
 }
 
 .parallax-cover{
-    background: linear-gradient(transparent 5%,darken($gray, 10%) 31%);
+    background: linear-gradient(transparent 5%,darken($gray, 10%) 10%);
     display: block;
     position: absolute;
     top: 100%;
@@ -224,9 +221,9 @@ body, html {
 $parallax__layers: 3;
 
 @for $i from 0 through $parallax__layers {
-$x: ($parallax__layers - $i) / 2;
+    $x: ($parallax__layers - $i) / 2;
     .layer-#{$i}{
-        transform: translateZ(unquote("-99 * $x#{px}")) scale($x + 1);
+        transform: translateZ(-100 * $x#{px}) scale($x + 1);
     }
 }
 

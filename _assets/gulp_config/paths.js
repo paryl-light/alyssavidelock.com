@@ -15,13 +15,13 @@ paths.siteDir          = 'docs/';        // The resulting static site.
 paths.siteAssetsDir    = 'docs/assets/'; // The resulting static site's assets.
 
 // Folder naming conventions.
-paths.postFolderName   = '_posts';
-paths.draftFolderName  = '_drafts';
-paths.fontFolderName   = 'fonts';
-paths.imageFolderName  = 'img';
-paths.scriptFolderName = 'js';
-paths.stylesFolderName = 'styles';
-paths.filesFolderName  = 'files';
+paths.postFolderName   = '_posts/';
+paths.draftFolderName  = '_drafts/';
+paths.fontFolderName   = 'fonts/';
+paths.imageFolderName  = 'img/';
+paths.scriptFolderName = 'js/';
+paths.stylesFolderName = 'styles/';
+paths.filesFolderName  = 'files/';
 
 // Asset files locations.
 paths.sassFiles   = paths.assetsDir + paths.stylesFolderName;

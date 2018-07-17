@@ -1,10 +1,10 @@
 ---
 layout: home
-title: Web Developer and SEO Specialist Ryan Videlock
+title: Web Developer and SEO Specialist Alyssa Videlock
 image: 
 page_id: '1'
-meta_title: Web Developer and SEO Specialist Ryan Videlock
-meta_description: 
+meta_title: Web and Software Developer Alyssa Videlock
+meta_description: My name is Alyssa Videlock and I have a background in Web and Software Development.
 ---
 {% capture index %}{% include pages/index.md %}{% endcapture %}
 {{ index | markdownify }}
@@ -17,10 +17,10 @@ meta_description:
         <img class="img-fluid" src="/assets/img/me.jpg" alt="Web Developer for hire" title="Full stack web developer and seo specialist">
     </div>
     <div class="col-lg-6">
-        This is me, web developer and seo specialist, Ryan Videlock! I've worked a small litany of jobs throught my career, with many different people. I work well with both small and large teams, adjusting my attitude and schedule to best suit the needs of the group as a whole. Not only do I enjoy working on problems presented to me, but overcoming them is the best feeling ever.<br /><br />
+        This is me, web and software developer, Alyssa Videlock! I've worked a small litany of jobs throught my career, with many different people. I work well with both small and large teams, adjusting my attitude and schedule to best suit the needs of the group as a whole. Not only do I enjoy working on problems presented to me, but overcoming them is the best feeling ever. I also have some experience with SEO.<br /><br />
         I love the idea of learning new things and meeting new people. I make friends quickly and pick up on things even faster. I make sure to put all of my attention towards the task at hand and not stop until the project is completed to it's best.<br /><br />
         I have also worked on many different projects; some of which are shown below. I come from a diverse work background; family-owned businesses and small companies alike. In these work places I had to learn many different positions, like front and back end developement, SEO manager, web designer and even data manager. All of these positions have given me a unique perspective on the world of development and allow me to overcome obstacles in completely different ways.<br /><br />
-        You can check out a pdf of my website <a href="/assets/img/resume.pdf" target="_blank">here</a>
+        <a href="/assets/files/resume.pdf" target="_blank">If you need any more information, you can check out my resume!</a>
     </div>
 </div>
 
